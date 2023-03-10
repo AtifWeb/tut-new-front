@@ -1,0 +1,493 @@
+.aside {
+  position: fixed;
+  width: 60%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #311b92;
+  color: #fff;
+  z-index: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  left: -100%;
+  transition: 0.3s ease all;
+  display: none;
+}
+.aside.toggle {
+  left: 0%;
+}
+.aside nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start !important;
+  margin-left: 0px !important;
+}
+
+.aside nav > li {
+  margin-bottom: 2rem;
+}
+.aside nav > li + li {
+  margin-left: 0rem !important;
+}
+
+.aside .auth-buttons {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.aside .auth-buttons button {
+  width: 100%;
+}
+.aside .auth-buttons .signin-button {
+  margin-right: 0px !important;
+  margin-bottom: 10px;
+}
+.Header {
+  background-color: #fff;
+  padding: 1.4rem 2.5rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.Header .logo p {
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+  color: var(--mainColor);
+}
+.Header nav {
+  display: flex;
+  margin-left: 2rem;
+  align-items: center;
+}
+.Header nav > * {
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+}
+.aside nav * {
+  color: #fff;
+}
+.Header nav * + * {
+  margin-left: 1rem;
+}
+.Header .burger-menu {
+  display: none;
+}
+.auth-buttons {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+.auth-buttons button {
+  background-color: var(--buttonColor);
+  border: 1px solid transparent;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.3rem 1rem;
+
+  height: 40px;
+  text-transform: uppercase;
+}
+.Header .auth-buttons button {
+  width: 90px;
+}
+.auth-buttons .signin-button {
+  background-color: #f0eff2;
+  color: var(--buttonColor);
+  margin-right: 10px;
+}
+
+/* Hero */
+.Hero {
+  height: 75vh;
+  min-height: 75vh;
+  background-color: var(--mainColor);
+}
+.hero-content {
+  width: 95%;
+  margin-left: auto;
+  color: #fff;
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 0.9fr;
+}
+.hero-content .hero-presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 90%;
+}
+.hero-content .hero-presentation h1 {
+  font-size: 3rem;
+  line-height: 1.4em;
+}
+.hero-content .hero-presentation h1 span {
+  background-color: #ffb502;
+  color: var(--mainColor);
+  padding: 0rem 0.5rem;
+}
+.hero-content .hero-presentation p {
+  margin: 1rem 0rem;
+}
+.hero-content form {
+  width: 80%;
+}
+.search-box {
+  display: flex;
+}
+.search-box .input-wrapper {
+  display: flex;
+  padding: 0rem 1rem;
+  height: 45px;
+  background-color: #fff;
+  align-items: center;
+  flex: 1;
+}
+.input-wrapper input {
+  width: 100%;
+  flex: 1;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+.find-a-tutor-button-wrapper {
+  flex: 0.8;
+}
+.find-a-tutor-button {
+  height: 100%;
+  background-color: var(--buttonColor);
+  border: none;
+  outline: none;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+.hero-image {
+  background-image: url(https://cdn.mytutor.co.uk/images/uploads/desk-laptop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  clip-path: polygon(18% 0, 100% 0, 100% 100%, 20% 100%, 0 49%);
+}
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* StartingPrice */
+.StartingPrice,
+.TrustedTeachers,
+.OnlineLessons {
+  background-color: #f9f8fb;
+  padding: 2rem 0rem;
+}
+.HandPicked {
+  padding: 2rem 0rem;
+  background-color: #00ccbb;
+}
+.starting-price-content,
+.HandPicked-content,
+.TrustedTeachers-content,
+.OnlineLessons-content {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.starting-price-presentation,
+.HandPicked-presentation,
+.TrustedTeachers-presentation,
+.OnlineLessons-presentation {
+  width: 40vw;
+}
+.starting-price-presentation > h1,
+.HandPicked-presentation > h1,
+.TrustedTeachers-presentation > h1,
+.OnlineLessons-presentation > h1 {
+  color: #311b92;
+  font-size: 2.8rem;
+}
+.starting-price-presentation > h1 > span,
+.OnlineLessons-presentation > h1 > span {
+  background-color: #00ccbb;
+  padding: 0rem 0.3rem;
+}
+.HandPicked-presentation > h1 > span {
+  padding: 0rem 0.3rem;
+  background-color: #ffb502;
+}
+.starting-price-presentation > p,
+.HandPicked-presentation > p,
+.TrustedTeachers-presentation > p,
+.OnlineLessons-presentation > p {
+  color: #303336;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.HandPicked-presentation > p {
+  color: #fff;
+}
+.starting-price-image-wrapper,
+.HandPicked-image-wrapper,
+.TrustedTeachers-image-wrapper,
+.OnlineLessons-image-wrapper {
+  flex: 1;
+  margin-left: 1rem;
+}
+.HandPicked-image-wrapper,
+.OnlineLessons-image-wrapper {
+  margin-left: 0px;
+  margin-right: 1rem;
+}
+.starting-price-image-wrapper img,
+.HandPicked-image-wrapper img,
+.TrustedTeachers-image-wrapper img,
+.OnlineLessons-image-wrapper img {
+  width: 100%;
+}
+
+.button-wrapper,
+.button-wrapper .custom-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-wrapper {
+  margin: 1.5rem 0rem;
+}
+.button-wrapper .custom-button,
+.study-resources-button > *,
+.meeting-tutor-button > * {
+  color: #fff;
+  font-size: 15px;
+  width: 150px;
+  font-weight: bold;
+  height: 45px;
+  background-color: var(--buttonColor);
+  text-transform: uppercase;
+}
+
+.study-resources,
+.meeting-tutor {
+  height: 70vh;
+  padding: 3rem 0rem;
+  background-color: #f9f8fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.meeting-tutor {
+  padding: 3rem 4rem;
+}
+.study-resources-presentation,
+.meeting-tutor-presentation {
+  text-align: center;
+}
+.study-resources-presentation h1,
+.meeting-tutor-presentation h1,
+.reviews > h1 {
+  color: #311b92;
+  font-size: 2.5rem;
+}
+.study-resources-presentation p {
+  color: #303336;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.study-resources-button,
+.meeting-tutor-button {
+  margin-top: 3rem;
+}
+.study-resources-button > *,
+.meeting-tutor-button > * {
+  min-width: 250px;
+
+  border: none;
+}
+
+.reviews {
+  padding: 3rem 2rem;
+  background-color: #00ccbb;
+}
+.reviews > h1 {
+  text-align: center;
+  color: #311b92;
+}
+.cards {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 3rem;
+  overflow: auto;
+}
+.cards > * + * {
+  margin-left: 1rem;
+}
+.card {
+  background-color: #fff;
+  min-width: 400px;
+  width: 400px;
+}
+.card-top {
+  border-bottom: 1px solid #ddd;
+}
+
+.card-top-content {
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: flex-start;
+}
+.card-top-content img {
+  width: 70px;
+  border-radius: 50%;
+  height: 70px;
+  margin-right: 1rem;
+}
+.card-top-content .review-presentation .reviews-name {
+  font-weight: bold;
+}
+.reviews-lesson {
+  color: #5f6163;
+}
+.card-bottom {
+  padding: 2rem;
+  height: 220px;
+  overflow: auto;
+  color: #5f6163;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card-bottom p {
+  font-style: italic;
+  font-size: 14px;
+}
+@media screen and (max-width: 950px) {
+  .Header {
+    justify-content: space-between;
+  }
+  .Header nav,
+  .auth-buttons {
+    display: none;
+  }
+  .aside {
+    display: flex;
+  }
+  .aside nav {
+    display: block;
+  }
+  .aside .auth-buttons {
+    display: flex;
+  }
+  .Header .burger-menu {
+    display: block;
+  }
+  .hero-content {
+    width: 100%;
+  }
+  .hero-content .hero-presentation p {
+    margin: 1rem 0rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .hero-content form {
+    width: 100%;
+  }
+  .find-a-tutor-button-wrapper {
+    flex: 0.5;
+  }
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+  .hero-content .hero-presentation {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .hero-image {
+    display: none;
+  }
+
+  .starting-price-content,
+  .HandPicked-content,
+  .TrustedTeachers-content,
+  .OnlineLessons-content {
+    flex-direction: column;
+  }
+  .starting-price-content,
+  .TrustedTeachers-content {
+    flex-direction: column-reverse;
+  }
+  .starting-price-presentation,
+  .HandPicked-presentation,
+  .TrustedTeachers-presentation,
+  .OnlineLessons-presentation {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-content .footer-top {
+    grid-template-columns: 1fr;
+    grid-row-gap: 3rem;
+  }
+  .footer-content .footer-top .contact-information {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero-content .hero-presentation h1 {
+    font-size: 2rem;
+  }
+  .hero-content .hero-presentation p {
+    font-size: 1rem;
+  }
+  .find-a-tutor-button {
+    font-size: 10px;
+  }
+  .starting-price-presentation > h1,
+  .HandPicked-presentation > h1,
+  .TrustedTeachers-presentation > h1,
+  .OnlineLessons-presentation > h1,
+  .study-resources-presentation h1,
+  .meeting-tutor-presentation h1,
+  .reviews > h1 {
+    font-size: 2rem;
+  }
+  .starting-price-presentation > p,
+  .HandPicked-presentation > p,
+  .TrustedTeachers-presentation > p,
+  .OnlineLessons-presentation > p,
+  .study-resources-presentation p {
+    font-size: 15px;
+  }
+  .StartingPrice,
+  .TrustedTeachers,
+  .OnlineLessons {
+    background-color: #f9f8fb;
+    padding: 4rem 0rem;
+  }
+  .cards {
+    padding: 3rem 0rem;
+  }
+  .study-resources,
+  .meeting-tutor {
+    min-height: 70vh;
+    padding: 4rem 0rem;
+  }
+  .study-resources-presentation,
+  .meeting-tutor-presentation {
+    width: 90%;
+  }
+}

@@ -1,0 +1,24 @@
+:root {
+  --buttonColor: #502cf2;
+  --mainColor: #181357;
+}
+
+body,
+button,
+input {
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.pdf_to_img.active {
+  opacity: 0.5;
+}

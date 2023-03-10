@@ -1,0 +1,350 @@
+.book-lesson-body {
+  width: 1200px;
+  display: grid;
+  margin: 0rem auto;
+  padding: 3rem 0rem;
+  grid-template-columns: 1fr 0.4fr;
+  grid-gap: 2rem;
+  position: relative;
+}
+.book-lesson-box-container {
+  position: absolute;
+  z-index: 222;
+  left: 50%;
+  width: 800px;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  min-height: 220px;
+  display: none;
+  padding: 2rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+.close-icon-book-lesson {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+.lesson-start-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  left: 0;
+}
+.lesson-start-component h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.lesson-start-component .lesson-start-button {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+}
+.lesson-start-component .lesson-start-button button {
+  margin: 0 auto !important;
+  width: 100%;
+  height: 45px;
+}
+.lesson-start-component .lesson-start-button button + button {
+  margin-left: 10px !important;
+}
+.BookLessonForm {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 1.5rem;
+}
+.BookLessonForm > .input-wrapper:first-child,
+.Schedule-button {
+  grid-column: span 2;
+}
+.Schedule-button,
+.lesson-start-component .lesson-start-button button {
+  margin-top: 2rem;
+  background-color: #181357;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.BookLessonForm label {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.BookLessonForm input,
+.BookLessonForm select {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #ddd;
+  padding: 0rem 0.5rem;
+}
+.book-lesson-body .left-side .top {
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.book-lesson-body .left-side .top,
+.book-lesson-body .left-side .top nav {
+  display: flex;
+  align-items: center;
+}
+.book-lesson-body .left-side .top nav li {
+  font-size: 15px;
+  color: rgb(114, 114, 114);
+  cursor: pointer;
+  padding: 0.5rem 0rem;
+}
+.book-lesson-body .left-side .top nav li.active {
+  border-bottom: 1px solid #181357;
+  color: #000;
+}
+.book-lesson-body .left-side .top nav li + li {
+  margin-left: 1rem;
+}
+.book-lesson-body form .search-input {
+  background-color: #fff;
+  display: flex;
+  border: 1px solid #ddd;
+  width: 250px;
+  height: 40px;
+  align-items: center;
+  padding: 0rem 0.5rem;
+  border-radius: 10px;
+}
+
+.book-lesson-body form .search-input input {
+  width: 100%;
+  height: 28px;
+  margin-left: 10px;
+  flex: 1;
+  outline: none;
+  border: none;
+}
+.book-lesson-body .meeting-box {
+  margin-top: 1rem;
+}
+.book-lesson-body .meeting-box > h1 {
+  font-size: 1.5rem;
+  color: #424242;
+}
+.book-lesson-body .meeting-box .meeting-card-wrapper {
+  margin-top: 10px;
+}
+.book-lesson-body .meeting-box .metting-card-dropdown-icon {
+  cursor: pointer;
+}
+.book-lesson-body .meeting-box .meeting-card-wrapper > p {
+  font-size: 20px;
+  color: #000;
+}
+
+.book-lesson-body .meeting-box .meeting-card-wrapper > p .month {
+  font-size: 15px;
+  color: #616179;
+  font-weight: bold;
+}
+.book-lesson-body .meeting-box .meeting-card-wrapper > p .day {
+  font-size: 14px;
+}
+.metting-card {
+  margin-top: 10px;
+}
+.book-lesson-body .meeting-box .meeting-card-head {
+  display: flex;
+  background-color: #f3f2f2;
+  align-items: center;
+  padding: 0rem 1rem;
+  color: #000;
+  border-radius: 10px;
+}
+.book-lesson-body .meeting-box .meeting-card-head > .time {
+  margin-left: 10px;
+}
+.book-lesson-body .meeting-box .meeting-card-head > .description {
+  margin: 0rem 1rem;
+  flex: 1;
+}
+.book-lesson-body .meeting-box .meeting-card-head select {
+  height: 30px;
+  padding: 0rem 0.4rem;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.book-lesson-body .meeting-content {
+  background-color: #f3f3f3;
+  margin-top: 0.5rem;
+  border-radius: 10px;
+
+  display: none;
+  align-items: center;
+  justify-self: flex-start;
+  padding: 2rem 1rem;
+}
+.book-lesson-body .meeting-content.active {
+  display: flex !important;
+}
+.book-lesson-body .meeting-content .button-wrapper {
+  margin: 0;
+}
+.book-lesson-body .meeting-content .button-wrapper button {
+  width: 150px;
+  height: 40px;
+  background-color: #616179;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.calender.box {
+  padding: 2rem 1.5rem;
+  background-color: #f3f2f2;
+  border-radius: 20px;
+}
+.calender-top {
+  display: flex;
+  align-items: center;
+}
+.calender-top > * + * {
+  margin-left: 10px;
+}
+.Calender-DateTime {
+  font-size: 20px;
+  font-weight: 500;
+}
+.calender-top .icon-wrapper {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.calender-top .icon-wrapper #calender-towards-icon {
+  transform: rotate(180deg);
+}
+.calender-days-name {
+  margin-top: 10px;
+
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-bottom: 1px solid #ddd;
+}
+.calender-days-name > span {
+  color: #0077ff;
+  font-weight: 500;
+  font-size: 15px;
+  color: #000000;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calender-days-name,
+.calender-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.calender-days-name span,
+.calender-days span {
+  font-size: 15px;
+  font-weight: 500;
+}
+.calender-days {
+  gap: 5px;
+  margin-top: 5px;
+}
+.calender-days > div {
+  border-radius: 50%;
+
+  display: flex;
+  width: 2.5vw;
+
+  height: 2.5vw;
+  justify-content: center;
+
+  align-items: center;
+  cursor: pointer;
+}
+
+.calender-days > div.active-day {
+  background-color: #181357;
+  color: #fff;
+}
+.calender-days span {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+
+  pointer-events: none;
+}
+.new-meeting-button {
+  background-color: #181357;
+  color: #fff;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 1rem;
+  font-size: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1300px) {
+  .book-lesson-body {
+    width: 95%;
+  }
+  .calender-days > div {
+    width: 3.5vw;
+
+    height: 3.5vw;
+  }
+}
+@media screen and (max-width: 950px) {
+  .book-lesson-body {
+    grid-template-columns: 1fr;
+  }
+  .book-lesson-body .left-side {
+    order: 2;
+  }
+  .book-lesson-body .right-side {
+    order: 1;
+  }
+  .calender-days > div {
+    width: 4.5vw;
+
+    height: 4.5vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .calender {
+    width: 100%;
+    /* display: none; */
+  }
+  .calender-days > div {
+    width: 30px;
+
+    height: 30px;
+  }
+  .book-lesson-body .left-side .top {
+    flex-direction: column;
+  }
+  .book-lesson-body form {
+    width: 100%;
+  }
+  .book-lesson-body form .search-input {
+    margin-top: 20px;
+    width: 100%;
+  }
+}

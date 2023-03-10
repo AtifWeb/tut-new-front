@@ -1,0 +1,49 @@
+.Footer {
+  padding: 6rem 0rem;
+  background-color: #181357;
+}
+.footer-content {
+  width: 90%;
+  margin: auto;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: #fff;
+}
+.footer-top nav > * {
+  color: #fff;
+}
+.footer-top nav > * + * {
+  margin-top: 0.5rem;
+  color: #aeadc1;
+}
+.footer-top nav li:first-child {
+  font-weight: 600;
+}
+.contact-information {
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+}
+.contact-information > * + * {
+  margin-top: 1rem;
+}
+.contact-information h2 {
+  font-weight: 600;
+}
+.contact-information .contact-us-button {
+  border: 1px solid #fff;
+  padding: 0.8rem 3rem;
+  margin-top: 4rem;
+}
+
+.footer-bottom {
+  color: #fff;
+  margin-top: 6rem;
+}
+.footer-bottom p {
+  font-size: 14px;
+}

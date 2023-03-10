@@ -1,0 +1,99 @@
+.LoginSelect {
+  background-color: #f9f8fb;
+  min-height: 100vh;
+  padding-top: 4rem;
+}
+
+.login-selection-section {
+  width: 80%;
+  margin: 0rem auto;
+}
+.login-selection-section-top {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+.close-login-selection-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #000;
+}
+.login-selection-section-top h1 {
+  font-size: 2rem;
+  color: #303336;
+}
+.img-wrapper {
+  height: 25vh;
+}
+.login-selection-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  margin-top: 3rem;
+}
+.LoginSelectionCard {
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 10px 10px #eeecf3;
+  border-radius: 10px;
+  padding: 2rem 3rem;
+}
+.LoginSelectionCard img {
+  width: 60%;
+}
+.LoginSelectionCard .card-main-para {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.LoginSelectionCard .card-main-para-desc {
+  color: gray;
+  margin-top: 5px;
+  font-size: 15px;
+}
+.LoginSelectionCard button {
+  background-color: #542eff;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  width: 100%;
+}
+@media screen and (max-width: 1300px) {
+  .LoginSelectionCard img {
+    width: 150px;
+  }
+  .login-selection-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 780px) {
+  .login-selection-cards {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 350px) {
+  .LoginSelectionCard img {
+    width: 120px;
+  }
+  .login-selection-section-top h1 {
+    font-size: 1.7rem;
+  }
+  .LoginSelectionCard .card-main-para {
+    font-size: 1.2rem;
+  }
+  .LoginSelectionCard .card-main-para-desc {
+    font-size: 0.8rem;
+  }
+  .LoginSelectionCard button {
+    font-size: 12px;
+  }
+}
