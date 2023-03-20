@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Main = () => {
   return (
@@ -17,16 +18,14 @@ export const Main = () => {
                   that easy.
                   <br />
                 </p>
-                <a
-                  id="w-node-_5d77b27f-90d6-b7ed-d123-1858df9fd32d-a1b3b6f8"
-                  data-w-id="5d77b27f-90d6-b7ed-d123-1858df9fd32d"
-                  href="#"
+                <Link
+                  to="/register"
                   className="shadow-button-wrap w-inline-block"
                 >
                   <div className="shadow-button-text">Register</div>
                   <div className="shadow-button-shadow _2"></div>
                   <div className="shadow-button-shadow"></div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

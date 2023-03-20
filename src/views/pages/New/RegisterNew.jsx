@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "../../../assets/css/New/login.css";
 import login_bg from "../../../assets/img/New/login_bg.webp";
-function LoginNew() {
+function RegisterNew() {
+  const { type } = useParams();
   return (
     <div className="LoginNewWrapper onboarding-page">
       <div
@@ -21,11 +22,11 @@ function LoginNew() {
                   href="https://gumroad.com/"
                 ></a>
                 <div className="actions">
-                  <Link to="/register">Sign up</Link>
+                  <Link to="/LoginSelectNew">Sign in</Link>
                 </div>
-                <h1>Welcome back.</h1>
+                <h1>Register Now</h1>
               </header>
-              <div className="input-group">
+              <div className="input-group" style={{ paddingTop: 0 }}>
                 <form
                   className="row stacked formtastic user"
                   id="login-form"
@@ -35,6 +36,43 @@ function LoginNew() {
                   method="post"
                 >
                   <section className="row classic-auth js-classic-auth">
+                    <fieldset>
+                      <legend>
+                        <label className="top-level-label">First Name</label>
+                      </legend>
+                      <input
+                        className="required top-level-input"
+                        tabindex="1"
+                        type="email"
+                        name="user[login_identifier]"
+                      />
+                    </fieldset>
+
+                    <fieldset>
+                      <legend>
+                        <label className="top-level-label">Last Name</label>
+                      </legend>
+                      <input
+                        className="required top-level-input"
+                        tabindex="1"
+                        type="email"
+                        name="user[login_identifier]"
+                      />
+                    </fieldset>
+                    {type == "student" && (
+                      <fieldset>
+                        <legend>
+                          <label className="top-level-label">Username</label>
+                        </legend>
+                        <input
+                          className="required top-level-input"
+                          tabindex="1"
+                          type="email"
+                          name="user[login_identifier]"
+                        />
+                      </fieldset>
+                    )}
+
                     <fieldset>
                       <legend>
                         <label className="top-level-label">Email</label>
@@ -48,7 +86,9 @@ function LoginNew() {
                     </fieldset>
                     <fieldset>
                       <legend>
-                        <label className="top-level-label">Password</label>
+                        <label className="top-level-label">
+                          Create a Password
+                        </label>
                       </legend>
                       <input
                         className="password required top-level-input"
@@ -57,8 +97,21 @@ function LoginNew() {
                         name="user[password]"
                       />
                     </fieldset>
+
+                    <fieldset>
+                      <legend>
+                        <label className="top-level-label">Phone Number</label>
+                      </legend>
+                      <input
+                        className="password required top-level-input"
+                        tabindex="2"
+                        type="password"
+                        name="user[password]"
+                      />
+                    </fieldset>
+
                     <button className="button-primary button-block button-full-width primary js-login-button">
-                      Login
+                      Register
                     </button>
                     <div
                       className="js-recaptcha"
@@ -79,4 +132,4 @@ function LoginNew() {
   );
 }
 
-export default LoginNew;
+export default RegisterNew;

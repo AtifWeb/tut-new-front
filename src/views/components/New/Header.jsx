@@ -74,35 +74,36 @@ function Header({ showLogo = null }) {
           </a>
           <nav role="navigation" className="nav-menu w-nav-menu">
             <Link
-              to="/LoginNew"
+              to="/LoginSelectNew"
               className="nav-link hidden-login w-inline-block"
             >
               <div className="nav-link-text">Login</div>
             </Link>
-            <a
-              data-w-id="74b2d8b7-de5a-9e4c-c0ce-c4e4067f3f1c"
-              href="#"
+            <Link
+              to="/register"
               className="nav-link hidden-sign-up w-inline-block"
             >
               <div className="nav-link-text">Register</div>
-            </a>
+            </Link>
+            <Link to="/" className="nav-link w-inline-block">
+              <div className="nav-link-text">Home</div>
+              <div className="nav-link-underline"></div>
+            </Link>
+            <Link to="/tutors" className="nav-link w-inline-block">
+              <div className="nav-link-text">Tutors</div>
+              <div className="nav-link-underline"></div>
+            </Link>
+
             <Link
               data-w-id="26a834a9-196a-c35c-1055-52c655195738"
-              to="/tutors"
+              to="/find-a-tutor"
               className="nav-link w-inline-block"
             >
               <div className="nav-link-text"> Find a tutor</div>
               <div className="nav-link-underline"></div>
             </Link>
-            <a
-              data-w-id="c358c3e7-418d-f411-4a76-8587c27a2faf"
-              href="#"
-              className="nav-link w-inline-block"
-            >
-              <div className="nav-link-text">How it works</div>
-              <div className="nav-link-underline"></div>
-            </a>
-            <a
+
+            {/* <a
               data-w-id="c358c3e7-418d-f411-4a76-8587c27a2fb3"
               href="#"
               className="nav-link w-inline-block"
@@ -118,24 +119,25 @@ function Header({ showLogo = null }) {
             >
               <div className="nav-link-text">For schools</div>
               <div className="nav-link-underline"></div>
-            </a>
-            <a
-              id="discover"
-              data-w-id="c358c3e7-418d-f411-4a76-8587c27a2fbf"
-              href="#"
+            </a> */}
+            <Link
+              to="/RegisterNew/auth/tutor"
               className="nav-link w-inline-block"
             >
               <div className="nav-link-text">Become a tutor</div>
               <div className="nav-link-underline"></div>
-            </a>
+            </Link>
           </nav>
           <div className="nav-menu-secondary">
-            <Link to="/LoginNew" className="nav-link log-in w-inline-block">
+            <Link
+              to="/LoginSelectNew"
+              className="nav-link log-in w-inline-block"
+            >
               <div>Login</div>
             </Link>
-            <a href="#" className="nav-link sign-up w-inline-block">
+            <Link to="/register" className="nav-link sign-up w-inline-block">
               <div>Register</div>
-            </a>
+            </Link>
           </div>
           <div
             data-w-id="8c99b7f0-db1f-4e22-5de3-786530f9515a"

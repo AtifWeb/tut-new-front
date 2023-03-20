@@ -3248,8 +3248,8 @@ form > section {
   display: grid;
   padding: 3rem 0;
   border-top: solid 0.0625rem currentColor;
-  grid-gap: 2rem;
-  gap: 2rem;
+  grid-gap: 10px;
+  gap: 10px;
   font-size: 1rem;
   line-height: 1.5;
   --line-height: 1.5rem;

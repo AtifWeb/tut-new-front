@@ -6,19 +6,21 @@
   min-height: 100vh;
   padding-top: 5rem;
   padding-bottom: 2rem;
-  background-color: #f9f8fb;
+  background-color: #f4f4f0;
 }
 .RegisterSelect::after,
 .CommonRegister::after {
   width: 100%;
   height: 10px;
-  background-color: #e85dcc;
+  background-color: #ffc900;
   position: absolute;
   top: 0;
   left: 0;
   content: "";
 }
-
+.RegisterSelect .logo-full {
+  color: #000;
+}
 .RegisterSelect > img,
 .CommonRegister > img {
   width: 150px;
@@ -41,7 +43,7 @@
 
 .register-selection-box .top .register-back-icon,
 .register-form-common .top .register-back-icon {
-  color: #542eff;
+  color: #000;
 }
 .register-selection-box .top h4,
 .register-form-common .top h4 {
@@ -54,16 +56,16 @@
 .register-form-common .top .register-login-button {
   padding: 0.3rem 0.6rem;
   font-size: 13px;
-  background-color: #f5f4f7;
-  color: #542eff;
+  background-color: #000;
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.3s ease all;
   font-weight: 600;
 }
 .register-selection-box .top .register-login-button:hover {
-  background-color: #542eff;
-  color: #fff;
+  background-color: #ffc900;
+  color: #000;
 }
 
 .register-selection-box .choice-box {
@@ -78,9 +80,13 @@
   word-spacing: 3px;
 }
 .register-selection-box .choice-box:hover {
-  border-color: #542eff;
+  background-color: #ffc900;
+  border-color: #ffc900;
 }
 
+.register-selection-box .choice-box:hover > * {
+  /* color: #fff; */
+}
 .common-registration-form {
   display: grid;
   grid-template-columns: 1fr 1fr;

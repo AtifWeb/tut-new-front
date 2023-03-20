@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const ShareWork = () => {
   return (
@@ -9,16 +10,11 @@ export const ShareWork = () => {
             Share your work.
             <span className="line-break">Someone out there needs it.</span>
           </h2>
-          <a
-            id="w-node-_1b6eb762-1807-5a52-2bb7-99fadfccce52-8279f859"
-            data-w-id="1b6eb762-1807-5a52-2bb7-99fadfccce52"
-            href="#"
-            className="shadow-button-wrap w-inline-block"
-          >
+          <Link to="/register" className="shadow-button-wrap w-inline-block">
             <div className="shadow-button-text">Register</div>
             <div className="shadow-button-shadow _2 red"></div>
             <div className="shadow-button-shadow yellow"></div>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

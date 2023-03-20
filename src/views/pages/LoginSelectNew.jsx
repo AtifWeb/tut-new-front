@@ -3,7 +3,7 @@ import Logo from "../../assets/img/logo.svg";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import { Link } from "react-router-dom";
 import "../../assets/css/register.css";
-function RegisterSelect() {
+function LoginSelectNew() {
   return (
     <div className="RegisterSelect">
       {/* <img src={Logo} alt="logo" /> */}
@@ -13,23 +13,23 @@ function RegisterSelect() {
           <Link to="/" class="register-back-icon">
             <ArrowBackIcon />
           </Link>
-          <h4>Sign up</h4>
-          <Link to="/LoginSelectNew" className="register-login-button">
-            Log in
+          <h4>Sign in</h4>
+          <Link to="/register" className="register-login-button">
+            Sign up
           </Link>
         </div>
 
-        <Link to="/RegisterNew/parent">
+        <Link to="/LoginNew/parent">
           <div className="choice-box">
             <p>I'm a parent</p>
           </div>
         </Link>
-        <Link to="/RegisterNew/student">
+        <Link to="/LoginNew/student">
           <div className="choice-box">
             <p>I'm a student</p>
           </div>
         </Link>
-        <Link to="/RegisterNew/auth/tutor">
+        <Link to="/LoginNew/tutor">
           <div className="choice-box">
             <p>I'm a tutor</p>
           </div>
@@ -39,4 +39,4 @@ function RegisterSelect() {
   );
 }
 
-export default RegisterSelect;
+export default LoginSelectNew;

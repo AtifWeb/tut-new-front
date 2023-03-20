@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from "../components/New/Header";
 
-import BecomeTutor from "../../assets/img/student-laptop-tutor.svg";
 import "../../assets/css/tutors.css";
 import { AxiosInstance } from "../../assets/script/js/axios/BaseAxios";
 import { Footer } from "../components/New/Footer";

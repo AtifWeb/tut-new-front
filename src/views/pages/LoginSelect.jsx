@@ -5,8 +5,9 @@ import studentlogin from "../../assets/img/student-login.png";
 import parentlogin from "../../assets/img/parent-login.png";
 import tutorlogin from "../../assets/img/tutor-login.png";
 import CloseIcon from "@material-ui/icons/Close";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 function LoginSelect() {
+  const { type } = useParams();
   return (
     <div className="LoginSelect">
       <div className="login-selection-section">

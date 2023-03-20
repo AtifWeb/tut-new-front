@@ -142,7 +142,10 @@
   margin: 2rem auto;
 }
 .specific-tutor-body > a {
-  color: #502cf2;
+  color: #000;
+  width: 100%;
+
+  background-color: #ff90e8;
 }
 
 .specific-tutor-body .tutor-profile {
@@ -325,8 +328,8 @@
   font-size: 14px;
 }
 .specific-tutor-body .submit-button {
-  background-color: #502cf2;
-  color: #fff;
+  background-color: #ff90e8;
+  color: #000;
   margin-top: 2rem;
   width: 100%;
   height: 45px;
@@ -378,17 +381,32 @@
   align-items: center;
   width: 1200px;
   margin: auto;
-  min-height: 400px;
+  min-height: 500px;
+}
+.FindTutor.hero-container {
+  background-color: #ff90e8;
+}
+.FindTutor .hero-content {
+  grid-template-columns: 1fr;
+  justify-items: center;
+  text-align: center;
+}
+.FindTutor .hero-content > * {
+  width: 600px;
 }
 .hero-container .left h1,
 .form-area .contact-details h1 {
-  font-size: 3rem;
+  font-size: 4.5rem;
   color: #303336;
 }
 .hero-container .left p,
 .form-area .contact-details p {
   color: #6b6981;
   font-size: 20px;
+}
+.FindTutor .hero-content p {
+  color: #000;
+  margin-top: 2rem;
 }
 .hero-container .right {
   display: flex;
@@ -429,6 +447,11 @@
   padding: 0rem 0.7rem;
   border: 1px solid #ddd;
 }
+.form-area form .input-wrapper input {
+  border: none !important;
+  height: 90%;
+  outline: none;
+}
 .form-area form .radio-container,
 .form-area form .time-container {
   margin-top: 1.5rem;
@@ -445,9 +468,9 @@
 }
 .form-area form .radio-container .radio-container-content input:checked + label,
 .form-area form .time-container .time-container-content input:checked + label {
-  background-color: #f6f2ff;
-  color: #502cf2;
-  border-color: #502cf2;
+  background-color: #ffc80057;
+  color: #000;
+  border-color: #ffc900;
 }
 .form-area
   form
@@ -456,7 +479,7 @@
   input:checked
   + label
   h4 {
-  color: #502cf2;
+  color: #000;
 }
 .form-area form .radio-container .radio-container-content label,
 .form-area form .time-container .time-container-content input + label {
@@ -543,8 +566,8 @@ form
   margin-top: 1rem;
 }
 .form-area .submit-button-tutor-find-out {
-  background-color: #502cf2;
-  color: #fff;
+  background-color: #ffc900;
+  color: #000;
   width: 35%;
   height: 50px;
   border: none;

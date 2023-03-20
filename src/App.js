@@ -19,6 +19,9 @@ import FindTutor from "./views/pages/FindTutor";
 import BookLesson from "./views/pages/BookLesson";
 import Lesson from "./views/pages/Lesson";
 import LessonDoc from "./views/components/LessonDoc/LessonDoc";
+import RegisterNew from "./views/pages/New/RegisterNew";
+import RegisterNewTutor from "./views/pages/New/RegisterNewTutor";
+import LoginSelectNew from "./views/pages/LoginSelectNew";
 function App() {
   return (
     <div className="App">
@@ -27,8 +30,14 @@ function App() {
           <Route path="/" exact>
             <Home />
           </Route>
-          <Route path="/LoginNew" exact>
+          <Route path="/LoginNew/:type" exact>
             <LoginNew />
+          </Route>
+          <Route path="/RegisterNew/:type" exact>
+            <RegisterNew />
+          </Route>
+          <Route path="/RegisterNew/auth/tutor" exact>
+            <RegisterNewTutor />
           </Route>
 
           <Route path="/BookLesson/:id" exact>
@@ -50,6 +59,11 @@ function App() {
           <Route path="/register" exact>
             <RegisterSelect />
           </Route>
+
+          <Route path="/LoginSelectNew" exact>
+            <LoginSelectNew />
+          </Route>
+
           <Route path="/register/:type" exact>
             <CommonRegister />
           </Route>
@@ -82,12 +96,12 @@ function App() {
               mainheading="Student log in"
             />
           </Route>
-          <Route path="/lesson/:id" exact>
+          {/* <Route path="/lesson/:id" exact>
             <Lesson />
           </Route>
           <Route path="/lessonDoc/" exact>
             <LessonDoc docId="61b2ef9654102529b3f549f9" />
-          </Route>
+          </Route> */}
         </Switch>
       </Router>
     </div>

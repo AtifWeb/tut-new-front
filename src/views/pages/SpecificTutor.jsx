@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Header from "../components/Home/Header";
-import Footer from "../components/Home/Footer";
-
+import Header from "../components/New/Header";
+import { Footer } from "../components/New/Footer";
+import { ShareWork } from "../components/New/ShareWork";
 import { Link, useParams, useHistory } from "react-router-dom";
-
-import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 import { HandleSpecificTutorEvent } from "../../assets/script/js/Events/SpecificTutor/SpecificTutor";
 import { AxiosInstance } from "../../assets/script/js/axios/BaseAxios";
 import axios from "axios";
@@ -131,13 +129,13 @@ function SpecificTutor() {
         <input type="submit" name="" />
       </form> */}
 
-      <form action="" encType="multipart/form-data" onSubmit={HandleSubmit}>
+      {/* <form action="" encType="multipart/form-data" onSubmit={HandleSubmit}>
         <input type="file" name="" id="Files-input" />
         <input type="submit" name="" />
-      </form>
+      </form> */}
 
       <div className="specific-tutor-body">
-        <Link to="/tutors">View Tutors </Link>
+        {/* <Link to="/tutors">View Tutors </Link> */}
         <div className="tutor-profile">
           <div className="tutor-presentation">
             <div className="tutor-presentation-top">
@@ -271,6 +269,7 @@ function SpecificTutor() {
         </div>
       </div>
 
+      <ShareWork />
       <Footer />
     </div>
   );
